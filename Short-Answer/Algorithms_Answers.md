@@ -16,6 +16,6 @@ c) The runtime is O(n) (linear). It's recursive, it decrements n (number of bunn
 I would use a binary search tree to solve this. 
 
 1. Start at the midpoint of the list of floor numbers and drop egg. If it breaks from initial midpoint, set new max to left of it. However, if it doesn't break, find new maximum height and set minimum to right of initial midpoint.
-2. With each iteration, you'll move to a side of the binary three until you reach a midpoint where the egg does not break and you're right below the max value(lowest loor where egg will break). 
+2. With each iteration, you'll move to a side of the binary tree until you reach a midpoint where the egg does not break and you're right below the max value(lowest floor where egg will break). 
 
 The runtime complexity is O(log n) since the number of floors is being halved by each iteration. 
